@@ -7,6 +7,9 @@ public class Circulo_PPB extends FiguraGeometrica_PPB {
 	public Circulo_PPB(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+			if (radio<0) {
+				radio*=-1;
+			}
 	}
 
 	@Override
@@ -20,11 +23,6 @@ public class Circulo_PPB extends FiguraGeometrica_PPB {
 		return radio * 2 * PI;
 	}
 	
-	public double positivo() {
-		if (radio<0) {
-			radio*=-1;
-		}
-		return radio;
-	}
+	
 
 }
