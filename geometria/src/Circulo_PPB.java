@@ -19,5 +19,12 @@ public class Circulo_PPB extends FiguraGeometrica_PPB {
 	public double perimetro() {
 		return radio * 2 * PI;
 	}
+	
+	public double positivo() {
+		if (radio<0) {
+			radio*=-1;
+		}
+		return radio;
+	}
 
 }
